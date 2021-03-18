@@ -5,7 +5,7 @@ export function Profile(){
            <img src="https://github.com/saviohub.png" alt="Savio git"/>
            <div>
                <strong>Savio</strong>
-               <p>Level one</p>
+               <p>Level 1</p>
            </div>
        </div>
     );

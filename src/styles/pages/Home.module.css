@@ -5,14 +5,18 @@
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
+   
 }
 
 .container section{
     flex: 1;
+    margin-top: 2rem;
     display: grid;
+
     grid-template-columns: 1fr 1fr; /*Duas colunas que tenha um tamanho por igual*/
     gap: 6.25rem;
     align-content: center;
+    
     /* esses cod vai fazer com que todo conteúdo do
     grid seja alinhado ao sentro verticalmente */
 }
