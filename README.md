@@ -1,3 +1,0 @@
-#MoveitClone
-
-Welcome!
