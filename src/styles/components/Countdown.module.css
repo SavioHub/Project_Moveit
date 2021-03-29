@@ -4,7 +4,9 @@
     font-family: Rajdhani;
     font-weight: 600;
     color: var(--title);
+    background: #ffffff;  
 }
+
 .countdownContainer >div{
     flex: 1;
     
@@ -24,7 +26,7 @@
 .countdownContainer >div span:first-child{ /*primeiro filho */
     border-right: 1px solid #f0f1f3;
 }
-.countdownContainer >div span:last-child{ /*primeiro filho */
+.countdownContainer >div span:last-child{ /*segundo filho */
     border-left: 1px solid #f0f1f3;
 }
 .countdownContainer > span{
@@ -53,6 +55,19 @@
     transition: background-color 0.3s;
 }
 
-.countdownButton:hover{
+.countdownButton:not(:disabled):hover{/*disabilitar o hover quando o ciclo encerrar*/
     background: var(--blue-dark);
+}
+.countdownButtonActive{
+    background: var(--white);
+    color: var(--title);
+}
+.countdownButtonActive:not(:disabled):hover{/*disabilitar o hover quando o ciclo encerrar*/
+    background: var(--red);
+    color: var(--white);
+}
+.countdownButton:disabled{ /*desabilitar o botão(ciclo encerrado!)*/
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed; /*inclickavel com o mouse*/
 }

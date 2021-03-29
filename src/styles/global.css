@@ -4,8 +4,8 @@
     box-sizing: border-box;
   }
 :root {
-    --white: rgb(255, 255, 255);
-    --background: #f2f3f5;
+    --white: #ffffff;
+    --background: #203a6e;
     --gray-line: #cbced8;
     --text: #666666;
     --text-highligt: #b3b9ff;
@@ -36,7 +36,7 @@
 }
 
 body {
-    background: var(--white);
+    background: #f8dfcc;
     color: var(--text);
 }
 
