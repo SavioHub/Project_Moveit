@@ -16,9 +16,9 @@ export function ChallengeBox(){
         resetCountdown();
     }
 
-    function handleChallengeFiled(){
+    function handleChallengeFailed(){
         resetChallenge();
-        resetChallenge();
+        resetCountdown();
     }
     
     return(
@@ -36,7 +36,7 @@ export function ChallengeBox(){
                        <button 
                             type="button"
                             className={styles.challengeFailedButton}
-                            onClick={handleChallengeFiled}
+                            onClick={handleChallengeFailed}
 
                         >
                             Falhei

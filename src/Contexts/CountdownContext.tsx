@@ -12,7 +12,7 @@ interface CountdownContextData{
     seconds: number;
     minutes: number;
     isActive: boolean;
-    hasFinished: boolean
+    hasFinished: boolean;
     startCountdown: ()=> void;
     resetCountdown: ()=> void;
 }
@@ -29,7 +29,7 @@ export function CountdownProvider({children}: CountdownProviderProps){
 
    
         const {startNewChallenges}= useContext(ChallengesContext)
-        console.log('teste3')
+
     
         const [time, setTime] = useState(0.1 * 60);
         const [isActive, setIsActive] = useState(false);
@@ -47,7 +47,7 @@ export function CountdownProvider({children}: CountdownProviderProps){
             clearTimeout(countdownTimeout);//para corrigir o atraso de um segundo quando aperta em abandonar ciclo
             setIsActive(false);
             setTime(0.1*60);
-            setHasFinished(true);
+            setHasFinished(false);
         }
         useEffect(()=>{
             if(isActive && time > 0) {
@@ -77,4 +77,4 @@ export function CountdownProvider({children}: CountdownProviderProps){
         </CountdownContext.Provider>
     )
 }
-//todo contexto q for criar com typesscript vai seguir essa estrutura 
+  
