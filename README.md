@@ -20,7 +20,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## :clipboard: Funcionalidades
-- [x] Login através do github.
 - [x] Iniciar um ciclo de 25 minutos.
 - [x] Abadornar ciclo.
 - [x] Dispara um efeito sonoro quando o ciclo chega ao fim.
