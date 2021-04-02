@@ -14,17 +14,17 @@
     text-align: center;
 }
 
-.challengeBoxNotActive{
+.challengeNotActive{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.challengeBoxNotActive strong{
+.challengeNotActive strong{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.4;
 }
-.challengeBoxNotActive p{
+.challengeNotActive p{
     display: flex;
     flex-direction: column; /*para colocar a imagem em cima do texto*/
     align-items: center;
@@ -32,6 +32,66 @@
     max-width: 70%; /*para q o texto fique mais no centro*/
     margin-top: 3rem;
 }
-.challengeBoxContainer p img{
+.challengeBoxNotActive p img{
     margin-bottom: 1rem;
+}
+.challengeActive{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.challengeActive header{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--gray-line);
+}
+.challengeActive main{
+    flex: 1;
+    display: flex;
+    flex-direction: column; /*as ultimas 4 linhas para ficar tudo ao centro*/
+    align-items: center;
+    justify-content: center;
+}
+.challengeActive main strong{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    margin: 1.5rem 0 1rem;
+}
+.challengeActive main p{
+    line-height: 1.5;
+}
+.challengeActive footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.challengeActive footer button{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 5px;
+
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+
+    transition: filter 0.10s;
+}
+.challengeActive footer button.challengeFailedButton{
+    background: var(--red);
+}
+.challengeActive footer button.challengeSuceededButton{
+    background: var(--green);
+}
+.challengeActive footer button.challengeFailedButton:hover{
+    background: rgb(175, 21, 21);
+}
+.challengeActive footer button.challengeSuceededButton:hover{
+    background: rgb(18, 168, 50);
 }

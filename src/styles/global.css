@@ -36,7 +36,7 @@
 }
 
 body {
-    background: #f8dfcc;
+    background: var(--gray-line);
     color: var(--text);
 }
 
